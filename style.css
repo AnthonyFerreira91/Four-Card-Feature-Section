@@ -1,7 +1,7 @@
 :root {
 	/* Layout */
-	--Mobile: 375px;
-	--Desktop: 1440px;
+	--Mobile: 37.5rem;
+	--Desktop: 144rem;
 
 	/* Colors Primary */	
 	--Red: hsl(0, 78%, 62%);
@@ -125,3 +125,44 @@ section:nth-child(4) hr {border: 2.4px solid var(--Blue);}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 950px) {
+	header {
+		margin: 4rem 0 4rem;
+	}
+	main {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(4, auto);
+		grid-gap: 5px 30px;
+	}
+	section:nth-child(1) {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
+	section:nth-child(2) {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	section:nth-child(3) {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 3;
+		grid-row-end: 5;
+	}
+	section:nth-child(4) {
+		grid-column-start: 3;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
+	footer {
+		position: fixed;
+		left: 50;
+		bottom: 0;
+	}
+}
