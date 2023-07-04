@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![myScreenshot](https://github.com/Matrixfrpro33/Four-Card-Feature-Section-/blob/55da8561ff4067efbb951e3757760f0e29c59e6e/Screenshot%20-%20Four%20card%20feature.png)
 
 ### Links
 
